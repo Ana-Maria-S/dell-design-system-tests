@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tooltip On Right</title>
+        <link rel="stylesheet" href="../node_modules/@dds-uicore/all/dist/css/dds-reboot.min.css" />
+        <link rel="stylesheet" href="../node_modules/@dds-uicore/all/dist/css/dds-grid.css" />
+        <link rel="stylesheet" href="../node_modules/@dds-uicore/all/dist/css/dds-all-with-fonts.css" />
+        <script src="../node_modules/@dds-uicore/all/dist/tooltip/js/tooltip.js"></script>
+    </head>
+    <body>
+        <div>
+        <input type="text" maxlength="30">
+        </input>
+        <button class="dds__icons dds__alert-info-cir dds__tooltip-icon" data-toggle="dds__tooltip" data-placement="right"  aria-label="information" data-title="Tooltips are used to display very short, helpful information. Tooltip on right."></button>
+    </div>
+    <script>[].forEach.call(document.querySelectorAll("[data-toggle=\"dds__tooltip\"]"), function(element) { new UIC.Tooltip(element); });</script>
+    </body>
+</html>
